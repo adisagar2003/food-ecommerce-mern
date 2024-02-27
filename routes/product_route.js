@@ -10,6 +10,14 @@ router.get('/:limit', async (req, res) => {
     })
 });
 
+router.get('/search/:foodName', async (req, res) => {
+    const products = await product_model.find({foodName: new RegExp(`^${req.params.foodName.charAt(0).toUpperCase()}`)});
+    res.status(200).json({
+        data: products,
+        response: 'success'
+    })
+})
+
 router.get('/about', (req, res) => {
     res.send('About birds page');
 });

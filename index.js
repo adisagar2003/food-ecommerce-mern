@@ -21,6 +21,9 @@ const firebaseApp = initializeApp(firebaseConfig);
 app.use(cors());
 app.use(express.json());
 app.use('/product', product_route);
+app.get('/', (req, res)=>{
+  res.send('hello');
+})
 app.listen(port, ()=> {
     ConnectDB();
     console.log(`listening on port ${port}`);
