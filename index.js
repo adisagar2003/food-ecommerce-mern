@@ -16,14 +16,17 @@ const firebaseConfig = {
     messagingSenderId: "248114869719",
     appId: "1:248114869719:web:47a45a2b27deaa61d70792"
   };
+
 const firebaseApp = initializeApp(firebaseConfig);
 //middlewares
 app.use(cors());
 app.use(express.json());
 app.use('/product', product_route);
+
 app.get('/', (req, res)=>{
-  res.send('hello');
+  res.send('Ecom backend');
 })
+
 app.listen(port, ()=> {
     ConnectDB();
     console.log(`listening on port ${port}`);
