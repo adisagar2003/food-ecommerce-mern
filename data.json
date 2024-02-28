@@ -1,0 +1,46 @@
+    [
+        {
+            "foodType": "Snack", 
+            "foodName": "Fresh organic villa farm lemon 500gm pack",
+            "rating": 4,
+            "owner": "NestFood",
+            "ownerColor": "red",
+            "price": 28.85, 
+            "orignalPrice": 34.44, 
+            "image": "https://firebasestorage.googleapis.com/v0/b/ecomfoodapp.appspot.com/o/lemon.png?alt=media&token=e0b6cc87-a298-4ee7-a43f-a9d21151333f",
+            "sticker": ""
+        },
+        {
+            "foodType": "Hodo Foods", 
+            "foodName": "Best snakes with hazel nut pack200gm",
+            "rating": 3.5,
+            "owner": "Stoufer",
+            "ownerColor": "green",
+            "price": 52.85, 
+            "orignalPrice": 55.8, 
+            "image": "https://firebasestorage.googleapis.com/v0/b/ecomfoodapp.appspot.com/o/hazelnut.png?alt=media&token=655822ba-49d4-4a91-9b60-5c03226981ea",
+            "sticker": ""
+        },
+        {
+            "foodType": "Fruits", 
+            "foodName": "Organic fresh vanilla farm watermelon 5kg",
+            "rating": 4,
+            "owner": "StarKist",
+            "ownerColor": "red",
+            "price": 48.85, 
+            "orignalPrice": 52.8, 
+            "image": "https://firebasestorage.googleapis.com/v0/b/ecomfoodapp.appspot.com/o/watermelon.png?alt=media&token=aedfeef3-c7b8-4c67-a594-66e2de9bee16",
+            "sticker": ""
+        },
+        {
+            "foodType": "Beverages", 
+            "foodName": "Fresh organic coffee",
+            "rating": 4,
+            "owner": "Old El Paso",
+            "ownerColor": "green",
+            "price": 23.85, 
+            "orignalPrice": 35.44, 
+            "image": "https://firebasestorage.googleapis.com/v0/b/ecomfoodapp.appspot.com/o/coffee.png?alt=media&token=2860fc00-be18-4ec4-b8b3-ffa01c7ba992",
+            "sticker": ""
+        }
+    ]
