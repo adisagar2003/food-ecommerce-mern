@@ -23,9 +23,9 @@ app.use(cors());
 app.use(express.json());
 app.use('/product', product_route);
 
-app.get('/', (req, res)=>{
-  res.send('Ecom backend');
-})
+app.get('/', (req, res) => {
+  res.send("Hello there");
+});
 
 app.listen(port, ()=> {
     ConnectDB();
