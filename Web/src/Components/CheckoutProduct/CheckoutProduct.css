@@ -24,3 +24,9 @@
     font-weight: 700;
     color: var(--green);
 }
+
+@media (max-width: 768px) {
+    .checkout-product {
+        width: 80%;
+    }
+}
