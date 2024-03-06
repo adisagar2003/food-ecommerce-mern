@@ -12,7 +12,7 @@ const port = process.env.PORT || 5000;
 const ConnectDB = require('./db/db_connect');
 const app = express();
 const product_route = require('./routes/product_route');
-
+const stripe_route = require('./routes/stripe_routes');
 const firebaseConfig = {
     apiKey: "AIzaSyCUs1FNuw-fVm9qnJktEm0CWGhZ5KfmwX4",
     authDomain: "ecomfoodapp.firebaseapp.com",
@@ -23,14 +23,14 @@ const firebaseConfig = {
   };
 
 const firebaseApp = initializeApp(firebaseConfig);
-//middlewares
+
 console.log(__dirname);
 app.use(express.static(__dirname + '/Web/dist/'));
 app.use(cors(corsOptions));
 app.use(express.json());
 
 app.use('/product', product_route);
-
+app.use('/stripe', stripe_route);
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname + "/Web/dist/index.html"));
 });
