@@ -25,14 +25,16 @@ const firebaseConfig = {
 const firebaseApp = initializeApp(firebaseConfig);
 
 console.log(__dirname);
-app.use(express.static(__dirname + '/Web/dist/'));
+app.use(express.static(path.join(__dirname,".","Web/dist")));
+app.use(express.static("public"));
 app.use(cors(corsOptions));
 app.use(express.json());
 
 app.use('/product', product_route);
 app.use('/stripe', stripe_route);
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname + "/Web/dist/index.html"));
+  res.sendFile(path.join(path.join(__dirname,".","Web/dist", "index.html")));
+  
 });
 
 app.listen(port, ()=> {
